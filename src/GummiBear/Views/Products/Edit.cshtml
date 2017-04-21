@@ -14,18 +14,18 @@
     @Html.HiddenFor(model => model.ProductId)
 
     @Html.LabelFor(model => model.Name)
-    @Html.EditorFor(model => model.Name)
+    @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control" } })
 
     @Html.LabelFor(model => model.Cost)
-    @Html.EditorFor(model => model.Cost)
+    @Html.EditorFor(model => model.Cost, new { htmlAttributes = new { @class = "form-control" } })
 
     <label>Country of origin</label>
-    @Html.EditorFor(model => model.CountryOrigin)
+    @Html.EditorFor(model => model.CountryOrigin, new { htmlAttributes = new { @class = "form-control" } })
 
     @Html.LabelFor(model => model.Picture)
-    @Html.EditorFor(model => model.Picture)
+    @Html.EditorFor(model => model.Picture, new { htmlAttributes = new { @class = "form-control" } })
 
-    <input type="submit" value="Save" />
+    <input type="submit" class="btn btn-success" value="Save" />
 }
 
 <p>@Html.ActionLink("Back to product list", "Index")</p>

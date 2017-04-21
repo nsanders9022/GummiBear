@@ -20,10 +20,11 @@
     <label>Country of Origin</label>
     @Html.TextBoxFor(model => model.CountryOrigin, new { @class = "form-control" })
 
-    @Html.LabelFor(model => model.Picture)
+    <label>Picture URL</label>
     @Html.TextBoxFor(model => model.Picture, new { @class = "form-control" })
-
+    <br />
     <input type="submit" class="btn btn-success" value="Add new product" />
 }
 
+<br />
 <p>@Html.ActionLink("Back to product list", "Index")</p>
