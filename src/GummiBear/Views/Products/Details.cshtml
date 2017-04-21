@@ -16,6 +16,7 @@
     <div class="col-xs-6">
         <p><strong>@Html.DisplayNameFor(model => model.Cost)</strong> $@Html.DisplayFor(model => model.Cost).00</p>
         <p><strong>Country of Origin</strong> @Html.DisplayFor(model => model.CountryOrigin)</p>
+        <h5>@Html.ActionLink("Edit Product Information", "Edit", new { id = Model.ProductId }) | @Html.ActionLink("Delete product", "Delete", new { id = Model.ProductId })</h5>
     </div>
 </div>
 

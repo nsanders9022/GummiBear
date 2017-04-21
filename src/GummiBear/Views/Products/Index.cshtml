@@ -8,17 +8,19 @@
 
 
 <h2>Products</h2>
-<ul>
+
+
+<div class="row">
     @foreach (var product in Model)
     {
-        <div class="product-list-content">
+        <div class="product-list-content col-xs-4">
             <h3>@Html.ActionLink((string)product.Name, "Details", new { id = product.ProductId })</h3>
             <p>$@product.Cost.00</p>
             <img class="product-image" src="@product.Picture" />
-            <h5>@Html.ActionLink("Edit", "Edit", new { id = product.ProductId }) | @Html.ActionLink("Delete", "Delete", new { id = product.ProductId })</h5>
         </div>
 
     }
-</ul>
+</div>
 
-<p>@Html.ActionLink("Add a new product", "Create")</p>
+<br />
+<h3>@Html.ActionLink("Add a new product", "Create")</h3>

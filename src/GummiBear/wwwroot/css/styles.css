@@ -74,11 +74,12 @@ h2 {
 }
 
 .product-image {
-    height: 100px;
+    height: 200px;
     width: auto;
 }
 
 .details-image {
-    height: 300px;
+    width: 80px;
 }
+
 
