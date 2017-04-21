@@ -1,3 +1,21 @@
-﻿body {
-    background-color: forestgreen;
+﻿.header {
+    background-image: url("https://i.ytimg.com/vi/t_AYgBMBjO4/maxresdefault.jpg");
+    height: 600px;
+    width: 100%;
+    background-position: center;
 }
+
+h1 {
+    padding-top: 230px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+}
+#subheading {
+    width: 50%;
+    text-align: center;
+    color: white;
+    margin-left: 25%;
+}
+
