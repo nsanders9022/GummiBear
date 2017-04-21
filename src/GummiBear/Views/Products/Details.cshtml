@@ -1,0 +1,15 @@
+﻿@model GummiBear.Models.Product
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <h3>@Html.DisplayFor(model => model.Name) Details</h3>
+    <hr />
+    <p><strong>@Html.DisplayNameFor(model => model.Cost)</strong> $@Html.DisplayFor(model => model.Cost)</p>
+    <p><strong>@Html.DisplayNameFor(model => model.CountryOrigin)</strong> @Html.DisplayFor(model => model.CountryOrigin)</p>
+
+    <p>@Html.ActionLink("Back to product list", "Index")</p>
+</body>
+</html>
