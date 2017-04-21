@@ -6,19 +6,34 @@
 </head>
 <body>
     <div class="header">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <img id="brandImage" alt="Brand" src="https://fancybear.net/image/_render__gummy_bear_breakdance_by_bmatsantos-d8s7b56.png">
+                <p class="navbar-text navbar-center"> @Html.ActionLink("About Us", "About")</p>
+                <p class="navbar-text navbar-center"> @Html.ActionLink("Products", "Index", "Products")</p>
+            </div>
+        </nav>
         <h1>Gummi Bear Kingdom</h1>
         <div id="subheading">
             <h4>When your gummy bear craving has been satisfied, life is good. We help you to satisfy all of your gummy bear needs.</h4>
         </div>
     </div>
+
     <div class="container">
-        
-        
+        <div class="row index-boxes">
+            <div class="col-xs-6 box">
+                <h3>@Html.ActionLink("View Products", "Index", "Products")</h3>
+                <p>See what various products we offer at Gummi Bear Kingdom</p>
+                <img class="icon" src="https://cdn.shopify.com/s/files/1/0228/8535/products/KDSTS0002U_GummiBears_MockupFile_1024x1024.jpg?v=1444019700" />
+            </div>
+            <div class="col-xs-6 box">
+                <h3>@Html.ActionLink("About Us", "About")</h3>
+                <p>Read more about our company</p>
+                <img class="icon" src="https://cdn2.iconfinder.com/data/icons/eco-business/512/clients-512.png" />
 
-        <p>Welcome to the wonderful world of gummy bears. Gummi Bear Kingdom is the world's leading expert in all things gummy bears. We offer a variety of products that will satisfy customers of all ages. </p>
-
-        <p>@Html.ActionLink("Check out our products", "Index", "Products")</p>
-    </div>
+            </div>
+        </div>       
+     </div>
 </body>
 </html>
 

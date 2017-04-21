@@ -19,3 +19,43 @@ h1 {
     margin-left: 25%;
 }
 
+#brandImage {
+    height: 40px;
+    width: auto;
+    float: left;
+}
+
+.navbar {
+    background:transparent;
+    border: none;
+}
+
+.navLinks {
+    text-align: center;
+    color: white;
+}
+
+.box {
+    height: 200px;
+    width: 200px;
+    margin-right: 20px;
+}
+
+.index-boxes {
+    margin-left: 30%;
+    margin-top: 50px;
+}
+
+a {
+    color: red;
+}
+
+.icon {
+    height: 50px;
+    padding-left: 30%;
+}
+
+.navbar-text a {
+    color: white;
+}
+
