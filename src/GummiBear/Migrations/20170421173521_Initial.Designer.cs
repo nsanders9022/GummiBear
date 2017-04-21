@@ -8,8 +8,8 @@ using GummiBear.Models;
 namespace GummiBear.Migrations
 {
     [DbContext(typeof(GummiBearDbContext))]
-    [Migration("20170421153432_fixTypo")]
-    partial class fixTypo
+    [Migration("20170421173521_Initial")]
+    partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

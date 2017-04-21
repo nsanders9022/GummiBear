@@ -1,15 +1,13 @@
-﻿@model GummiBear.Models.Product
+﻿@{
+    ViewData["Title"] = "Gummi Bear Kingdom";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <title></title>
-</head>
-<body>
-    <h3>@Html.DisplayFor(model => model.Name)</h3>
-    <hr />
-    <p><strong>@Html.DisplayNameFor(model => model.Cost)</strong> $@Html.DisplayFor(model => model.Cost).00</p>
-    <p><strong>Country of Origin</strong> @Html.DisplayFor(model => model.CountryOrigin)</p>
+@model GummiBear.Models.Product
 
-    <p>@Html.ActionLink("Back to product list", "Index")</p>
-</body>
-</html>
+<h3>@Html.DisplayFor(model => model.Name)</h3>
+<hr />
+<p><strong>@Html.DisplayNameFor(model => model.Cost)</strong> $@Html.DisplayFor(model => model.Cost).00</p>
+<p><strong>Country of Origin</strong> @Html.DisplayFor(model => model.CountryOrigin)</p>
+
+<p>@Html.ActionLink("Back to product list", "Index")</p>

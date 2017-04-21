@@ -1,31 +1,29 @@
-﻿@model GummiBear.Models.Product
+﻿@{
+    ViewData["Title"] = "Gummi Bear Kingdom";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <title></title>
-</head>
-<body>
-    <h2>Edit @Html.DisplayFor(model => model.Name)</h2>
-    <hr/>
+@model GummiBear.Models.Product
 
-    @using (Html.BeginForm())
-    {
-        @Html.HiddenFor(model => model.ProductId)
 
-        @Html.LabelFor(model => model.Name)
-        @Html.EditorFor(model => model.Name)
+<h2>Edit @Html.DisplayFor(model => model.Name)</h2>
+<hr/>
 
-        @Html.LabelFor(model => model.Cost)
-        @Html.EditorFor(model => model.Cost)
+@using (Html.BeginForm())
+{
+    @Html.HiddenFor(model => model.ProductId)
 
-        <label>Country of origin</label>
-        @Html.EditorFor(model => model.CountryOrigin)
+    @Html.LabelFor(model => model.Name)
+    @Html.EditorFor(model => model.Name)
 
-        <input type="submit" value="Save" />
-    }
+    @Html.LabelFor(model => model.Cost)
+    @Html.EditorFor(model => model.Cost)
 
-    <p>@Html.ActionLink("Back to product list", "Index")</p>
+    <label>Country of origin</label>
+    @Html.EditorFor(model => model.CountryOrigin)
+
+    <input type="submit" value="Save" />
+}
+
+<p>@Html.ActionLink("Back to product list", "Index")</p>
         
-
-</body>
-</html>

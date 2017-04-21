@@ -10,7 +10,7 @@ namespace GummiBear.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "Prodcts",
+                name: "Products",
                 columns: table => new
                 {
                     ProductId = table.Column<int>(nullable: false)
@@ -21,14 +21,14 @@ namespace GummiBear.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Prodcts", x => x.ProductId);
+                    table.PrimaryKey("PK_Products", x => x.ProductId);
                 });
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Prodcts");
+                name: "Products");
         }
     }
 }

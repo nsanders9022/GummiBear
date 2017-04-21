@@ -1,18 +1,15 @@
-﻿@model GummiBear.Models.Product
+﻿@{
+    ViewData["Title"] = "Gummi Bear Kingdom";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
 
-<html>
-<head>
-    <title></title>
-</head>
-<body>
+@model GummiBear.Models.Product
 
-    <h2>Are you sure you want to delete @Html.DisplayFor(model => model.Name)?</h2>
-    <hr />
-    @Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)
-    @using (Html.BeginForm())
-    {
-        <input type="submit" value="Delete" />
-    }
-    @Html.ActionLink("Back to List", "Index")
-</body>
-</html>
+<h2>Are you sure you want to delete @Html.DisplayFor(model => model.Name)?</h2>
+<hr />
+@Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)
+@using (Html.BeginForm())
+{
+    <input type="submit" value="Delete" />
+}
+@Html.ActionLink("Back to List", "Index")
