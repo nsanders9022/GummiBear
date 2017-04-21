@@ -14,7 +14,7 @@
         @Html.TextBoxFor(model => model.Name)
 
         @Html.LabelFor(model => model.Cost)
-        @Html.TextBoxFor(model => model.Cost)
+        @Html.TextBoxFor(model => model.Cost, new { @type = "number" })
 
         <label>Country of Origin</label>
         @Html.TextBoxFor(model => model.CountryOrigin)
