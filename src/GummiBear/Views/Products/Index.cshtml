@@ -8,13 +8,15 @@
 
 
 <h2>Products</h2>
-<h4>@Html.DisplayNameFor(model => model.Name)</h4>
 <ul>
     @foreach (var product in Model)
     {
-        <li>
-        @Html.ActionLink((string)product.Name, "Details", new { id = product.ProductId }) | @Html.ActionLink("Edit", "Edit", new { id = product.ProductId }) | @Html.ActionLink("Delete", "Delete", new { id = product.ProductId })
-        <img class="product-image" src="@product.Picture"</li>
+        <div class="product-list-content">
+            <h3>@Html.ActionLink((string)product.Name, "Details", new { id = product.ProductId })</h3>
+            <p>$@product.Cost.00</p>
+            <img class="product-image" src="@product.Picture" />
+            <h5>@Html.ActionLink("Edit", "Edit", new { id = product.ProductId }) | @Html.ActionLink("Delete", "Delete", new { id = product.ProductId })</h5>
+        </div>
 
     }
 </ul>
