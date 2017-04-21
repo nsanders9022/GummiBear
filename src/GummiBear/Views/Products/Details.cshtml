@@ -5,10 +5,10 @@
     <title></title>
 </head>
 <body>
-    <h3>@Html.DisplayFor(model => model.Name) Details</h3>
+    <h3>@Html.DisplayFor(model => model.Name)</h3>
     <hr />
-    <p><strong>@Html.DisplayNameFor(model => model.Cost)</strong> $@Html.DisplayFor(model => model.Cost)</p>
-    <p><strong>@Html.DisplayNameFor(model => model.CountryOrigin)</strong> @Html.DisplayFor(model => model.CountryOrigin)</p>
+    <p><strong>@Html.DisplayNameFor(model => model.Cost)</strong> $@Html.DisplayFor(model => model.Cost).00</p>
+    <p><strong>Country of Origin</strong> @Html.DisplayFor(model => model.CountryOrigin)</p>
 
     <p>@Html.ActionLink("Back to product list", "Index")</p>
 </body>

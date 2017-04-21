@@ -1,0 +1,28 @@
+﻿@model GummiBear.Models.Product
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <h3>Add a new product</h3>
+    <hr />
+
+    @using (Html.BeginForm())
+    {
+        @Html.LabelFor(model => model.Name)
+        @Html.TextBoxFor(model => model.Name)
+
+        @Html.LabelFor(model => model.Cost)
+        @Html.TextBoxFor(model => model.Cost)
+
+        <label>Country of Origin</label>
+        @Html.TextBoxFor(model => model.CountryOrigin)
+
+        <input type="submit" value="Add new product" />
+    }
+
+    <p>@Html.ActionLink("Back to product list", "Index")</p>
+   
+</body>
+</html>

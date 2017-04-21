@@ -11,8 +11,9 @@
         @foreach (var product in Model)
         {
             <li>@Html.ActionLink((string) product.Name, "Details", new { id = product.ProductId })</li>
-
         }
     </ul>
+
+    <p>@Html.ActionLink("Add a new product", "Create")</p>
 </body>
 </html>
