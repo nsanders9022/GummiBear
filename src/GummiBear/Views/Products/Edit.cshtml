@@ -1,0 +1,31 @@
+﻿@model GummiBear.Models.Product
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <h2>Edit @Html.DisplayFor(model => model.Name)</h2>
+    <hr/>
+
+    @using (Html.BeginForm())
+    {
+        @Html.HiddenFor(model => model.ProductId)
+
+        @Html.LabelFor(model => model.Name)
+        @Html.EditorFor(model => model.Name)
+
+        @Html.LabelFor(model => model.Cost)
+        @Html.EditorFor(model => model.Cost)
+
+        <label>Country of origin</label>
+        @Html.EditorFor(model => model.CountryOrigin)
+
+        <input type="submit" value="Save" />
+    }
+
+    <p>@Html.ActionLink("Back to product list", "Index")</p>
+        
+
+</body>
+</html>
