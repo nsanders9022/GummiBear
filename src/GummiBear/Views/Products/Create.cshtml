@@ -12,18 +12,18 @@
 @using (Html.BeginForm())
 {
     @Html.LabelFor(model => model.Name)
-    @Html.TextBoxFor(model => model.Name)
+    @Html.TextBoxFor(model => model.Name, new { @class = "form-control" })
 
     @Html.LabelFor(model => model.Cost)
-    @Html.TextBoxFor(model => model.Cost, new { @type = "number" })
+    @Html.TextBoxFor(model => model.Cost, new { @type = "number", @class = "form-control" })
 
     <label>Country of Origin</label>
-    @Html.TextBoxFor(model => model.CountryOrigin)
+    @Html.TextBoxFor(model => model.CountryOrigin, new { @class = "form-control" })
 
     @Html.LabelFor(model => model.Picture)
-    @Html.TextBoxFor(model => model.Picture)
+    @Html.TextBoxFor(model => model.Picture, new { @class = "form-control" })
 
-    <input type="submit" value="Add new product" />
+    <input type="submit" class="btn btn-success" value="Add new product" />
 }
 
 <p>@Html.ActionLink("Back to product list", "Index")</p>

@@ -5,9 +5,21 @@
 
 @model GummiBear.Models.Product
 
+
 <h3>@Html.DisplayFor(model => model.Name)</h3>
 <hr />
-<p><strong>@Html.DisplayNameFor(model => model.Cost)</strong> $@Html.DisplayFor(model => model.Cost).00</p>
-<p><strong>Country of Origin</strong> @Html.DisplayFor(model => model.CountryOrigin)</p>
 
+<div class="row">
+    <div class="col-xs-6">
+        <img class="details-image" src="@Model.Picture" />
+    </div>
+    <div class="col-xs-6">
+        <p><strong>@Html.DisplayNameFor(model => model.Cost)</strong> $@Html.DisplayFor(model => model.Cost).00</p>
+        <p><strong>Country of Origin</strong> @Html.DisplayFor(model => model.CountryOrigin)</p>
+    </div>
+</div>
+
+
+
+<br />
 <p>@Html.ActionLink("Back to product list", "Index")</p>
