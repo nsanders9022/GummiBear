@@ -14,12 +14,15 @@
         <div class="container-fluid">
             <div class="navbar-header">
                 <img id="brandImage" alt="Brand" src="https://fancybear.net/image/_render__gummy_bear_breakdance_by_bmatsantos-d8s7b56.png">
-                <p class="navbar-text"> @Html.ActionLink("About Us", "About")</p>
+                <p class="navbar-text"> @Html.ActionLink("About Us", "About", "Home")</p>
                 <p class="navbar-text"> @Html.ActionLink("Products", "Index", "Products")</p>
                 <p class="navbar-text"> @Html.ActionLink("Home page", "Index", "Home")</p>
             </div>
         </div>
     </nav>
+    <div class="header-nonindex">
+
+    </div>
     <div class="container">
         @RenderBody()
     </div>
