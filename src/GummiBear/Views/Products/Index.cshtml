@@ -1,5 +1,18 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
+﻿@model IEnumerable<GummiBear.Models.Product>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <h2>Products</h2>
+    <h4>@Html.DisplayNameFor(model => model.Name)</h4>
+    <ul>
+        @foreach (var product in Model)
+        {
+            <li>@Html.DisplayFor(modelItem => product.Name)</li>
+
+        }
+    </ul>
+</body>
+</html>
