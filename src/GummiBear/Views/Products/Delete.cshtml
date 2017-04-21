@@ -7,9 +7,20 @@
 
 <h2>Are you sure you want to delete @Html.DisplayFor(model => model.Name)?</h2>
 <hr />
-@Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)
-@using (Html.BeginForm())
-{
-    <input type="submit" value="Delete" />
-}
+
+<div class="row">
+    <div class="col-xs-6">
+        @Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)
+        @using (Html.BeginForm())
+        {
+            <br />
+            <input type="submit" class="btn btn-danger" value="Delete" />
+        }
+    </div>
+    <div class="col-xs-6">
+        <img class="details-image" src="@Html.DisplayFor(model => model.Picture)" />
+    </div>
+</div>
+
+<br />
 @Html.ActionLink("Back to List", "Index")

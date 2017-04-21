@@ -24,9 +24,10 @@
 
     @Html.LabelFor(model => model.Picture)
     @Html.EditorFor(model => model.Picture, new { htmlAttributes = new { @class = "form-control" } })
-
+    <br />
     <input type="submit" class="btn btn-success" value="Save" />
 }
 
+<br />
 <p>@Html.ActionLink("Back to product list", "Index")</p>
         
