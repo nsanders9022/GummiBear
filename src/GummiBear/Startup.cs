@@ -7,6 +7,10 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Configuration;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Infrastructure;
+using GummiBear.Models;
 
 namespace GummiBear
 {
@@ -25,7 +29,7 @@ namespace GummiBear
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddEntityFramework()
-               .AddDbContext<ToDoDbContext>(options =>
+               .AddDbContext<GummiBearDbContext>(options =>
                    options.UseSqlServer(Configuration["ConnectionStrings:DefaultConnection"]));
         }
 

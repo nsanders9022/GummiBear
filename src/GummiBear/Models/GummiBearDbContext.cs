@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 
 namespace GummiBear.Models
 {
@@ -18,7 +19,7 @@ namespace GummiBear.Models
             options.UseSqlServer(@"Server=(localdb)\mssqllocaldb;Database=GummiBear;integrated security=True");
         }
 
-        public ToDoDbContext(DbContextOptions<ToDoDbContext> options)
+        public GummiBearDbContext(DbContextOptions<GummiBearDbContext> options)
             : base(options)
         {
         }
