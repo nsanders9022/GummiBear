@@ -19,5 +19,6 @@ namespace GummiBear.Models
         public string Name { get; set; }
         public int Cost { get; set; }
         public string CountryOrigin { get; set; }
+        public string Picture { get; set; }
     }
 }

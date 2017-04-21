@@ -13,7 +13,9 @@
     @foreach (var product in Model)
     {
         <li>
-        @Html.ActionLink((string)product.Name, "Details", new { id = product.ProductId }) | @Html.ActionLink("Edit", "Edit", new { id = product.ProductId }) | @Html.ActionLink("Delete", "Delete", new { id = product.ProductId })</li>
+        @Html.ActionLink((string)product.Name, "Details", new { id = product.ProductId }) | @Html.ActionLink("Edit", "Edit", new { id = product.ProductId }) | @Html.ActionLink("Delete", "Delete", new { id = product.ProductId })
+        <img class="product-image" src="@product.Picture"</li>
+
     }
 </ul>
 

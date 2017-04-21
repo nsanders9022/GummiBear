@@ -8,9 +8,10 @@ using GummiBear.Models;
 namespace GummiBear.Migrations
 {
     [DbContext(typeof(GummiBearDbContext))]
-    partial class GummiBearDbContextModelSnapshot : ModelSnapshot
+    [Migration("20170421210318_pictureColumn")]
+    partial class pictureColumn
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
             modelBuilder
                 .HasAnnotation("ProductVersion", "1.0.0-rtm-21431")

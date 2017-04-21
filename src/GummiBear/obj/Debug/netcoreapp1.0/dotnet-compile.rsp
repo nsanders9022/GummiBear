@@ -202,6 +202,8 @@ C:\Users\Nicole Laptop\Desktop\GummiBear\src\GummiBear\Controllers\HomeControlle
 C:\Users\Nicole Laptop\Desktop\GummiBear\src\GummiBear\Controllers\ProductsController.cs
 C:\Users\Nicole Laptop\Desktop\GummiBear\src\GummiBear\Migrations\20170421173521_Initial.cs
 C:\Users\Nicole Laptop\Desktop\GummiBear\src\GummiBear\Migrations\20170421173521_Initial.Designer.cs
+C:\Users\Nicole Laptop\Desktop\GummiBear\src\GummiBear\Migrations\20170421210318_pictureColumn.cs
+C:\Users\Nicole Laptop\Desktop\GummiBear\src\GummiBear\Migrations\20170421210318_pictureColumn.Designer.cs
 C:\Users\Nicole Laptop\Desktop\GummiBear\src\GummiBear\Migrations\GummiBearDbContextModelSnapshot.cs
 C:\Users\Nicole Laptop\Desktop\GummiBear\src\GummiBear\Models\GummiBearDbContext.cs
 C:\Users\Nicole Laptop\Desktop\GummiBear\src\GummiBear\Models\Product.cs
